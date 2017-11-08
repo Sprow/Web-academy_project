@@ -12,11 +12,11 @@ const _path = __dirname;
 let config = baseConfig(_path);
 
 if (env === "development") {
-    config = devConfig(config, path.normalize(path.join(_path, "/build")));
+    config = devConfig(config, path.normalize(path.join(_path, "/docs")));
 }
 
 if (env === "production") {
-   config = prodConfig(config, path.normalize(path.join(_path + "/build")))
+   config = prodConfig(config, path.normalize(path.join(_path + "/docs")))
 }
 
 
