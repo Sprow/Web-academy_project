@@ -924,8 +924,7 @@ a {
   background-size: cover;
   box-sizing: border-box;
   width: 100%;
-  height: 80vh;
-  padding-top: 7rem;
+  padding: 7rem 0;
 }
 .section-third-additional-info {
   position: absolute;
@@ -960,8 +959,6 @@ a {
 .section-third-left {
   background: url(assets/images/block-3_left.png) no-repeat;
   background-size: cover;
-  height: 80%;
-  width: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -969,22 +966,23 @@ a {
 }
 .section-third-left_img {
   margin-left: 2rem;
+  padding: 9.5rem 0;
 }
 .section-third-right {
   position: relative;
   background-color: #fff;
-  height: 80%;
+  height: 100%;
 }
 .section-third_bg-windmill {
   background: url(assets/images/block3_windmill.png) right bottom no-repeat;
   background-size: 17rem;
-  height: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: center;
       justify-content: center;
+  padding: 3rem 0;
 }
 .section-third_title {
   font-size: 3.5rem;
@@ -995,7 +993,7 @@ a {
   font-weight: bold;
 }
 .section-third_text2 {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 .section-third_images-block {
   display: -ms-flexbox;
@@ -1023,14 +1021,197 @@ a {
   background-size: cover;
   box-sizing: border-box;
   width: 100%;
-  height: 80vh;
+}
+.section-fourth-left {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
+  margin: 5rem 0;
+}
+.section-fourth-left_title1 {
+  color: #fff;
+  font-size: 4rem;
+  letter-spacing: 3px;
+}
+.section-fourth-left_title2 {
+  color: #c9a694;
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+.section-fourth-left-menu_item-name {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.section-fourth-left-menu_item-info {
+  color: #808080;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.section-fourth-left-menu_item-price {
+  font-size: 2.5rem;
+  color: #d0bb89;
 }
 .section-fourth-right {
-  margin: 5rem 0 5rem 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  text-align: center;
+  color: #55534b;
 }
-.section-fourth-right_bg-img {
-  height: 70vh;
-  float: right;
+.section-fourth-right-container {
+  background: url(assets/images/breakfast.png) center no-repeat;
+  background-size: contain;
+  margin: 4rem 0;
+  box-sizing: border-box;
+  padding: 0 9rem 0 8rem;
+}
+.section-fourth-right-header_text {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  box-sizing: border-box;
+  padding: 3rem 3rem 1rem 3rem;
+  font-weight: bold;
+}
+.section-fourth-right_text1 {
+  margin: 3rem 0 2rem 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.section-fourth-right_text2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+.section-fourth-right_btn {
+  color: #b08e72;
+  font-weight: bold;
+  font-size: 1.3rem;
+  box-sizing: border-box;
+  border: 1px solid #55534b;
+  margin: 3rem 7rem;
+  padding: 1rem 0;
+}
+.section-fifth {
+  background-color: #f3f2e9;
+  padding-bottom: 3rem;
+}
+.section-fifth-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-top: 5rem;
+  background: url(assets/images/block3_windmill.png) center top no-repeat;
+  background-size: 8rem;
+}
+.section-fifth-header_title {
+  font-size: 3rem;
+  color: #55534b;
+  letter-spacing: 1px;
+}
+.section-fifth-header_text {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #b08e72;
+}
+.section-fifth-left {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  text-align: center;
+}
+.section-fifth-left_item {
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+}
+.section-fifth-left_item-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #b08e72;
+  margin: 1.5rem 0;
+}
+.section-fifth-left_item-description {
+  color: #55534b;
+}
+.section-fifth-right {
+  position: relative;
+  background: url(assets/images/bg_block5_right.jpg) no-repeat;
+  background-size: contain;
+  margin-top: 5rem;
+}
+.section-fifth-right-full-recipe {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  color: #dfc792;
+  background-color: #fff;
+  border: 1px dashed rgba(128,128,128,0.5);
+  left: -2%;
+  top: 72%;
+}
+.section-fifth-right-prepare-time {
+  position: absolute;
+  top: -3%;
+  right: 1%;
+}
+.section-fifth-right-prepare-time_bg1 {
+  background-color: rgba(255,255,255,0.7);
+}
+.section-fifth-right-prepare-time_bg2 {
+  background: url(assets/images/bg32.png) no-repeat;
+  background-size: cover;
+}
+.section-fifth-right-prepare-time_item1 {
+  margin-bottom: 2px;
+}
+.section-fifth-right-prepare-time_item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  text-align: center;
+  padding: 2.5rem 3.5rem;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+.section-fifth-right-prepare-time_item-text {
+  font-size: 1.5rem;
+  color: #b08e72;
+}
+.section-fifth-right-prepare-time_item-number {
+  font-size: 5rem;
+  color: #55534b;
+  line-height: 5rem;
+}
+.section-fifth-right-prepare-time_item-number3 {
+  font-size: 6rem;
+  color: #dfc792;
+}
+.section-fifth-right-prepare-time_item-mins {
+  color: #55534b;
+  font-size: 1.2rem;
 }
 .image-between-sections {
   position: absolute;
@@ -1075,6 +1256,42 @@ a {
 .navbar-right_img {
   margin-right: 1rem;
   max-height: 15px;
+}
+.footer {
+  background-color: #f3f2e9;
+  width: 100%;
+  padding-bottom: 4rem;
+}
+.footer-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  font-weight: bold;
+  color: #55534b;
+}
+.footer-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex: 0 1 40%;
+      flex: 0 1 40%;
+  padding: 1.8rem;
+  border-bottom: 1px solid rgba(128,128,128,0.5);
+  border-top: 1px solid rgba(128,128,128,0.5);
+}
+.footer_link {
+  color: #55534b;
+  letter-spacing: 3px;
+}
+.footer_logo {
+  padding: 2rem;
+  font-family: Scriptina;
+  font-size: 2.5rem;
+  line-height: 0;
+  letter-spacing: 6px;
+  font-weight: normal;
 }
 @font-face {
   font-family: Scriptina;

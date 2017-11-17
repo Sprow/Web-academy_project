@@ -1,4 +1,8 @@
-@import "variables.styl"
+@import "variables.styl";
+
+$priceTextColor = #D0BB89;
+$sectionFourthTitleTextColor = #c9a694
+
 .section
   //max-width 1360px
   box-sizing border-box
@@ -83,10 +87,8 @@
       color #b8b6b3
     &_text41
       font-size 2rem
-      //padding-top 5rem
       font-family Scriptina
       color $textColorBrown
-      //width 90%
     &_img1
       height 30px
       margin-bottom 1rem
@@ -114,8 +116,9 @@
     background-size cover
     box-sizing border-box
     width 100%
-    height 80vh
-    padding-top  7rem
+    //height 100%
+    //height 80vh
+    padding 7rem 0
     &-additional-info
       position absolute
       background url(../assets/image/ready_in_40_mins_Kopie.png) no-repeat
@@ -136,30 +139,29 @@
       &_text2
         font-size 5rem
         font-weight bold
-        color #dfc792
+        color $textColorBrown2
       &_text3
         color $textColorGray
         font-weight bold
     &-left
       background url(../assets/image/block-3_left.png) no-repeat
       background-size cover
-      height 80%
-      width 100%
       display flex
       align-items center
       &_img
         margin-left 2rem
+        padding 9.5rem 0
     &-right
       position relative
       background-color white
-      height 80%
+      height 100%
     &_bg-windmill
       background url(../assets/image/block3_windmill.png) right bottom no-repeat
       background-size 17rem
-      height 100%
       display flex
       flex-direction column
       justify-content center
+      padding 3rem 0
     &_title
       font-size 3.5rem
     &_text1
@@ -167,7 +169,7 @@
       color #b39279
       font-weight bold
     &_text2
-      margin-bottom 2rem
+      margin-bottom 4rem
     &_images-block
       display flex
       align-self center
@@ -186,18 +188,151 @@
     background-size cover
     box-sizing border-box
     width 100%
-    //height 80vh
-    height 80vh
-    //padding 7rem 0
+    &-left
+      display flex
+      flex-direction column
+      justify-content space-between
+      align-items center
+      text-align center
+      margin 5rem 0
+      &_title1
+        color white
+        font-size 4rem
+        letter-spacing 3px
+      &_title2
+        color $sectionFourthTitleTextColor
+        font-weight bold
+        font-size 1.2rem
+        letter-spacing 1px
+        margin-bottom 2rem
+      &-menu_item-name
+        color white
+        font-size 2rem
+        font-weight bold
+        letter-spacing 2px
+      &-menu_item-info
+        color gray
+        font-weight bold
+        font-size 1.2rem
+      &-menu_item-price
+        font-size 2.5rem
+        color $priceTextColor
     &-right
-      //background url(../assets/image/breakfast.png) no-repeat
-      //background-size cover
-      margin 5rem 0 5rem 0
-      //padding-left 5rem
-      &_bg-img
-        //height 80%
-        height 70vh
-        float right
+      display flex
+      justify-content space-between
+      flex-direction column
+      text-align center
+      color $textColorGray
+      &-container
+        background url(../assets/image/breakfast.png) center no-repeat
+        background-size contain
+        //width 100%
+        //max-height 80%
+        margin 4rem 0
+        box-sizing border-box
+        padding 0 9rem 0 8rem
+      &-header_text
+        display flex
+        justify-content space-between
+        box-sizing border-box
+        padding 3rem 3rem 1rem 3rem
+        font-weight bold
+      &_text1
+        margin 3rem 0 2rem 0
+        font-size 3rem
+        font-weight bold
+      &_text2
+        font-size 1.2rem
+        font-weight bold
+        line-height 2rem
+      &_btn
+        color $textColorBrown
+        font-weight bold
+        font-size 1.3rem
+        box-sizing border-box
+        border 1px solid $textColorGray
+        margin 3rem 7rem
+        padding 1rem 0
+  &-fifth
+    background-color $fifthSectionAndFooterBgColor
+    padding-bottom 3rem
+    &-header
+      display flex
+      justify-content center
+      flex-direction column
+      align-items center
+      padding-top 5rem
+      background url(../assets/image/block3_windmill.png) center top no-repeat
+      background-size 8rem
+      &_title
+        font-size 3rem
+        color $textColorGray
+        letter-spacing 1px
+      &_text
+        font-size 0.9rem
+        letter-spacing 1px
+        font-weight bold
+        color $textColorBrown
+    &-left
+      display flex
+      flex-direction column
+      text-align center
+      &_item
+        margin-bottom 3rem
+        letter-spacing 1px
+        &-name
+          font-size 2rem
+          font-weight bold
+          color $textColorBrown
+          margin 1.5rem 0
+        &-description
+          color $textColorGray
+    &-right
+      position relative
+      background url(../assets/image/bg_block5_right.jpg) no-repeat
+      background-size contain
+      margin-top 5rem
+      &-full-recipe
+        position absolute
+        font-size 1.5rem
+        font-weight bold
+        padding 1rem
+        color $textColorBrown2
+        background-color white
+        border 1px dashed rgba(128, 128, 128, 0.5)
+        left -2%
+        top 72%
+      &-prepare-time
+        position absolute
+        top -3%
+        right 1%
+        &_bg1
+          background-color rgba(255, 255, 255, 0.7)
+        &_bg2
+          background url(../assets/image/bg32.png) no-repeat
+          background-size cover
+        &_item1
+          margin-bottom 2px
+        &_item
+          display flex
+          flex-direction column
+          text-align center
+          padding 2.5rem 3.5rem
+          box-sizing border-box
+          font-weight bold
+          &-text
+            font-size 1.5rem
+            color $textColorBrown
+          &-number
+            font-size 5rem
+            color $textColorGray
+            line-height 5rem
+          &-number3
+            font-size 6rem
+            color $textColorBrown2
+          &-mins
+            color $textColorGray
+            font-size 1.2rem
 
 .image-between-sections
   position absolute
