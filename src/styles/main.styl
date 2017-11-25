@@ -52,6 +52,8 @@ $sectionFourthTitleTextColor = #c9a694
       margin 3rem 0 4rem 0
       border 1px dashed #959289
       z-index 2
+    &_btn:hover
+      background-color rgba(86, 83, 76, 0.8);
   &-second
     background url(../assets/image/background_block2.jpg) no-repeat
     background-size cover
@@ -224,13 +226,28 @@ $sectionFourthTitleTextColor = #c9a694
       text-align center
       color $textColorGray
       &-container
-        background url(../assets/image/breakfast.png) center no-repeat
-        background-size contain
+        //background url(../assets/image/breakfast.png) center no-repeat
+        //background-size contain
         //width 100%
         //max-height 80%
-        margin 4rem 0
+        display flex
+        flex-direction column
+        justify-content center
+
+        position absolute
+        margin 4rem 0 4rem 8rem
+        //padding-left 7rem
         box-sizing border-box
-        padding 0 9rem 0 8rem
+        max-width 400px
+        //padding 0 9rem 0 8rem
+      &_img-bg
+        //position absolute
+        margin 4rem auto
+        //max-width 500px
+        display flex
+        justify-content center
+        align-items center
+
       &-header_text
         display flex
         justify-content space-between
@@ -253,6 +270,8 @@ $sectionFourthTitleTextColor = #c9a694
         border 1px solid $textColorGray
         margin 3rem 7rem
         padding 1rem 0
+      &_btn:hover
+        background-color rgba(86, 83, 76, 0.2);
   &-fifth
     background-color $fifthSectionAndFooterBgColor
     padding-bottom 3rem
